@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="../bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="web site icon" href="./pics/html.png">
+    <link rel="stylesheet" href="../animation.css">
+    <style>
+        #home_page::first-letter{
+            font-size: 35px;
+            color: rgb(44, 44, 255);
+        }
+        .navbar {
+            padding-bottom: 25px;
+        }
+        .p{
+          font-weight: bold;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          font-kerning: inherit;
+        }
+
+        .p::first-letter{
+          font-size: 30px;
+          color: rgb(111, 111, 252);
+        }
+        .span{
+          color: rgb(70, 70, 255);
+          font-weight: bolder;
+          animation-name: text;
+          animation-iteration-count: infinite;
+          animation-duration: 1s;
+          animation-direction: alternate;
+        }
+        @keyframes text{
+          from{
+            opacity: 1;
+            color: rgb(70, 70, 255);
+          }
+          to{
+            opacity: calc(0.6);
+            color: rgb(2, 247, 2);
+          }
+        }
+        .links{
+          display: flex; justify-content: space-between;
+        }
+        .links .links1{
+          display: flex;
+          gap: 20px;
+        }
+        .links .links2{
+          display: flex;
+          gap: 20px;
+        }
+        .h5{
+          padding: 10px;
+          background-color: rgb(125, 125, 255);
+          border-radius: 10px;
+        }
+        .h5:hover{
+          background-color: white;
+          border: 1px solid red;
+
+        }
+        .a{
+          text-decoration: none;
+          color: black;
+        }
+        @media  all and (max-width:500px) {
+          .row,.links,#nav{
+            display: flex;
+            flex-direction: column;
+          } 
+        }
+        .title{
+          animation-name: opacity;
+          animation-duration: 1s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate-reverse;
+
+        }
+        @keyframes opacity{
+          from{
+            opacity: calc(1);
+          }
+          to{
+            opacity: calc(0.4);
+          }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid" id="nav">
+          <a class="navbar-brand title" href="../home page/index.html">E-learning Ofppt</a>
+          <h3 id="home_page">About page</h3>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <div class="links">
+        <div class="links1">
+          <h5 class="h5"><a href="#def_ofppt" class="a">Definition de l'ofppt</a></h5>
+          <h5 class="h5"><a href="#def_dev" class="a">Definition du développement digital</a></h5>
+
+        </div>
+        <div class="links2">
+          <h5 class="h5"><a href="#deux_ans" class="a">2 ans dans l'ofppt</a></h5>
+          <h5 class="h5" ><a href="#langues" class="a">Les langues de programmation</a></h5>
+
+        </div>
+      </div>
+      <section class="container-fluid">
+        <div class="row">
+          <div class="col-md-4" id="first">
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./pics/OFPPT-pic.jpg" class="d-block w-100" alt="OFPPT PHOTO" height="400px">
+                </div>
+                <div class="carousel-item">
+                  <img src="./pics/ofppt pic2.jpg" class="d-block w-100" alt="OFPPT PHOTO" height="400px">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <p class="p" id="def_ofppt">L'Office de la Formation Professionnelle et de la Promotion du Travail <span class="span">OFPPT</span> est un établissement public marocain dédié à la formation professionnelle. Fondé en 1974, l'<span class="span">OFPPT</span> a pour mission de développer et de mettre en œuvre des programmes de formation professionnelle pour répondre aux besoins du marché du travail au Maroc. Il joue un rôle essentiel dans la préparation des individus à intégrer le monde professionnel en leur fournissant des compétences et des qualifications nécessaires.
+
+              Les principales missions de l'<span class="span">OFPPT</span> comprennent : <br>
+              
+              <span class="title">1-Développement de Programmes de Formation :</span> Conception et mise en œuvre de programmes de formation professionnelle dans divers secteurs pour répondre aux exigences du marché du travail. <br>
+              
+              <span class="title">2-Coordination avec les Entreprises : </span>Collaboration avec les entreprises et les employeurs pour adapter les programmes de formation aux besoins spécifiques du marché. <br>
+              
+              <span class="title">3-Promotion de l'Emploi :</span> Contribution à la promotion de l'emploi en formant des individus qualifiés et compétents pour répondre aux demandes du marché du travail. <br>
+              
+              <span class="title">4-Formation Continue :</span> Offre de formations continues pour permettre aux travailleurs de développer leurs compétences tout au long de leur carrière. <br>
+              
+              <span class="title">5-Insertion Professionnelle :</span> Aide à l'insertion professionnelle des diplômés en facilitant leur accès au marché du travail. <br>
+              
+              6-L'<span class="span">OFPPT</span> joue un rôle clé dans le développement économique du Maroc en contribuant à la formation d'une main-d'œuvre qualifiée et adaptée aux besoins des entreprises.</p>
+
+          </div>
+          <div class="col-md-8" >
+            <p id="def_dev" class="p">Le <span class="span">développement digital</span>, également appelé développement numérique, se réfère à la transformation des processus, des activités, des services ou des produits en utilisant les technologies de l'information et de la communication (TIC). Il englobe l'adoption et l'intégration de solutions numériques pour améliorer l'efficacité, l'innovation et la performance globale dans divers domaines, tels que les entreprises, l'éducation, la santé, le gouvernement, et bien d'autres. <br>
+
+              Le <span class="span">développement digital</span> implique souvent les éléments suivants : <br>
+              
+              <span class="title">1-Automatisation : </span>Utilisation de technologies pour automatiser des tâches répétitives, améliorant ainsi l'efficacité opérationnelle. <br>
+              
+              <span class="title">2-Numérisation des Processus :</span> Transformation des processus traditionnels en processus numériques, ce qui peut inclure la dématérialisation de documents, la gestion électronique des données, etc. <br>
+              
+              <span class="title">3-Innovation Technologique :</span> Adoption de nouvelles technologies telles que l'intelligence artificielle, l'Internet des objets (IoT), la blockchain, etc., pour stimuler l'innovation. <br>
+              
+              <span class="title">4-Expérience Utilisateur Améliorée :</span> Utilisation de solutions numériques pour améliorer l'expérience des utilisateurs, que ce soit dans le cadre de services en ligne, d'applications mobiles ou d'interfaces utilisateur conviviales. <br>
+              
+              <span class="title">5-Collecte et Analyse de Données :</span> Utilisation de données massives (big data) pour obtenir des insights significatifs, prendre des décisions éclairées et améliorer la prise en charge des besoins clients. <br>
+              
+              <span class="title">6-Transformation Culturelle :</span> Changement de la culture organisationnelle pour favoriser une mentalité axée sur l'innovation, la flexibilité et l'adaptabilité face aux évolutions technologiques. <br>
+              
+              Le <span class="span">développement digital</span> est souvent considéré comme un moyen de rester compétitif dans un monde de plus en plus connecté, où les avancées technologiques rapides influent sur la manière dont les entreprises et les organisations opèrent. Il est essentiel pour l'efficacité, la croissance et la pertinence à long terme.</p>
+
+          </div>
+          <div class="col-md-4">
+            <div id="carouselExampleIndicators" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./pics/dev digitaal.jpg" class="d-block w-100" alt="..." height="450px">
+                </div>
+                <div class="carousel-item">
+                  <img src="./pics/dev digital.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./pics/dev digital2.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./pics/Développeur Fullstack.jpg" class="d-block w-100" alt="PHOTO Developers" height="700px">
+                </div>
+                <div class="carousel-item">
+                  <img src="./pics/Hire Best Fullstack Developers Remotely in 2021 _ Turing.jpg" class="d-block w-100" alt="PHOTO Developers" height="700px">
+                </div>
+                <div class="carousel-item">
+                  <img src="./pics/html logo.jpg" class="d-block w-100" alt="PHOTO Developers" height="700px">
+                </div>
+                <div class="carousel-item">
+                  <img src="./pics/css logo.jpg" class="d-block w-100" alt="PHOTO Developers" height="700px">
+                </div>
+                <div class="carousel-item">
+                  <img src="./pics/java script logo.jpg" class="d-block w-100" alt="PHOTO Developers" height="700px">
+                </div>
+                <div class="carousel-item">
+                  <img src="./pics/python logo.jpg" class="d-block w-100" alt="PHOTO Developers" height="700px">
+                </div>
+                <div class="carousel-item">
+                  <img src="./pics/java script code.jpg" class="d-block w-100"alt="PHOTO Developers" height="700px">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <p id="deux_ans" class="p">Le contenu spécifique et le programme d'un cursus de <span class="span">deux ans</span> en <span class="span">"développement digital"</span> à l'OFPPT peuvent varier, il est donc important de se référer au curriculum officiel du programme spécifique dans lequel vous êtes inscrit. Cependant, voici un aperçu général des types de sujets et de compétences qui pourraient être abordés dans un <span class="span">programme de développement digital</span> : <br>
+
+              <span class="title">1-Langages de Programmation :</span> Introduction aux langages de programmation couramment utilisés dans le développement digital, tels que HTML, CSS, JavaScript, et éventuellement d'autres en fonction de l'orientation du programme. <br>
+              
+              <span class="title">2-Développement Web :</span> Compréhension des fondamentaux du développement web, y compris la création et la conception de sites web, d'applications web et d'interfaces utilisateur. <br>
+              
+              <span class="title">3-Gestion de Base de Données :</span> Apprentissage de la conception, de la mise en œuvre et de la gestion des bases de données, y compris des concepts tels que la normalisation des bases de données, les requêtes SQL et l'administration de bases de données. <br>
+              
+              <span class="title">4-Développement Logiciel :</span> Couverte des bases du développement logiciel, y compris la conception logicielle, la programmation, le débogage et les tests. <br>
+              
+              <span class="title">5-Marketing Digital :</span> Introduction aux stratégies de marketing digital, y compris le marketing sur les médias sociaux, l'optimisation des moteurs de recherch e (SEO) et la publicité en ligne. <br>
+              
+              <span class="title">6-Développement d'Applications Mobiles :</span> Principes de base du développement d'applications mobiles, y compris la création d'applications pour les plates-formes iOS et Android. <br>
+              
+              <span class="title">7-Réseautage :</span> Compréhension des bases des réseaux informatiques, y compris les protocoles, la sécurité et la résolution des problèmes. <br>
+              
+              <span class="title">8-Gestion de Projet :</span> Introduction aux principes de la gestion de projet, y compris la planification, l'exécution et le suivi des projets de développement digital. <br>
+              
+              <span class="title">9-Cybersécurité :</span> Bases de la cybersécurité, y compris les principes de codage sécurisé, la protection des données et la compréhension des menaces cybernétiques courantes. <br>
+              
+              <span class="title">10-Informatique en Nuage :</span> Introduction aux concepts et aux plates-formes de l'informatique en nuage, tels qu'AWS, Azure ou Google Cloud. <br>
+              
+              <span class="title">11-Commerce Électronique :</span> Compréhension des principes du commerce électronique, y compris les systèmes de paiement en ligne, les chariots d'achat et les considérations de sécurité. <br>
+              
+              Conception de l'Expérience Utilisateur (UX) et de l'Interface Utilisateur (UI) : Bases de la conception d'interfaces conviviales et de l'assurance d'une expérience utilisateur positive. <br>
+              
+              Il est important de noter que le domaine du développement digital est dynamique, et le programme peut évoluer pour intégrer les technologies émergentes et les tendances de l'industrie. De plus, la focalisation spécifique du programme peut varier en fonction des objectifs de la filière de l'OFPPT dans laquelle vous êtes inscrit.</p>
+
+          </div>
+          <div class="col-md-8" id="langues">
+            <ol class="p">
+              <li><span class="title">Langages de Programmation en Développement Full-Stack :</span>
+                <ul>
+                  <li>Front-end (Côté client) :
+                    <ul>
+                      <li><span class="span">HTML (HyperText Markup Language) :</span> Utilisé pour structurer le contenu des pages web.</li>
+                      <li><span class="span">CSS (Cascading Style Sheets) :</span> Utilisé pour la mise en page et le stylage des pages web.</li>
+                      <li><span class="span">JavaScript :</span> Un langage de script côté client pour rendre les pages web interactives.</li>
+                    </ul>
+                  </li>
+                  <li>Back-end (Côté serveur) :
+                    <ul>
+                      <li><span class="span">JavaScript (Node.js) :</span> Avec l'utilisation de Node.js, JavaScript peut également être utilisé côté serveur.</li>
+                      <li><span class="span">Python, Ruby, Java, PHP, C# :</span> Langages de programmation couramment utilisés pour le développement back-end.</li>
+                      <li><span class="span">Frameworks back-end :</span> Express.js (Node.js), Django (Python), Ruby on Rails (Ruby), Spring (Java), Laravel (PHP), etc.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><span class="title">Langages de Programmation en Développement Mobile :</span>
+                <ul>
+                  <li>iOS (Swift et Objective-C) :
+                    <ul>
+                      <li><span class="span">Swift : </span>Langage moderne développé par Apple pour le développement d'applications iOS.</li>
+                      <li><span class="span">Objective-C :</span> Ancien langage utilisé pour le développement iOS, encore présent dans certains projets existants.</li>
+                    </ul>
+                  </li>
+                  <li>Android (Java et Kotlin) :
+                    <ul>
+                      <li><span class="span">Java :</span> Langage historiquement utilisé pour le développement d'applications Android.</li>
+                      <li><span class="span">Kotlin :</span> Langage moderne pris en charge par Google pour le développement Android.</li>
+                    </ul>
+                  </li>
+                  <li>Frameworks et outils mobiles :
+                    <ul>
+                      <li><span class="span">React Native :</span> Utilise JavaScript et React pour créer des applications mobiles pour iOS et Android.</li>
+                      <li><span class="span">Flutter:</span>  Utilise Dart pour créer des applications mobiles nativement compilées.</li>
+                      <li> <span class="span">Xamarin :</span> Utilise C# pour créer des applications mobiles pour iOS et Android.</li>
+                    </ul>
+                  </li> 
+                </ul>
+              </li>
+            </ol>
+          </div> <!--end of div class col-md-8-->
+          <div class="col-md-4"> <!--start of div class col-md-4-->
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel"> <!--start of carousel-->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./pics/html logo.jpg" class="d-block w-100" alt="..." height="580px">
+                </div>
+                <div class="carousel-item">
+                  <img src="./pics/css logo.jpg" class="d-block w-100" alt="..." >
+                </div>
+                <div class="carousel-item">
+                  <img src="./pics/java script logo.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./pics/python logo.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./pics/java script logo.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./pics/Best Free Ruby Png - Ruby Programming Language Logo, Transparent Png , Transparent Png Image - PNGitem.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./pics/C Programming Language Logo, HD Png Download , Transparent Png Image - PNGitem.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./pics/Java free icons designed by Freepik.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./pics/Kotlin Logo - PNG Logo Vector Downloads (SVG, EPS).jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./pics/PHP Logo.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div><!--end of carousell-->
+          </div>
+        </div>  <!-- end of div class row-->
+        
+      </section>
+    
+</body>
+</html>
